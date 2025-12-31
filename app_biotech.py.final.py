@@ -1,3 +1,10 @@
+# Affichage du logo en haut de la page
+try:
+    st.image("logo.png", width=200)
+except:
+    st.write("Logo non trouvé") # Message de secours si le nom est différent
+
+
 import streamlit as st
 import pandas as pd
 from Bio import Entrez
@@ -110,3 +117,4 @@ if btn_lancer:
             st.error(f"Erreur : {e}")
             
        
+
